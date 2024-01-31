@@ -8,7 +8,7 @@ public class Main {
         String answer = "";
 
         // as long as answer does not become "F", code will run
-        while (true) {
+        while (!(answer.equals("N"))) {
 
             double fahr = userInput();
 
@@ -20,11 +20,6 @@ public class Main {
             Scanner userInput = new Scanner(System.in);
             System.out.println("Would you like to check again? (Y/N) ");
             answer = userInput.nextLine();
-
-            //ends the program if user input is "F", if it's anything else the code still runs
-            if (answer == "N") {
-                break;
-            }
         }
     }
 
